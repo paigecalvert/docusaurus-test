@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Replicated Docs',
-  favicon: 'images/logo-replicated-red.png',
+  favicon: 'images/favicon.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -42,7 +42,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+            
+          },
+          // gtag: {
+          //   trackingID: 'GTM-W3BM5G5',
+          //   anonymizeIP: true,
+          // },  
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
@@ -50,8 +55,10 @@ const config = {
         //   editUrl:
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
+        
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+
         },
       }),
     ],
