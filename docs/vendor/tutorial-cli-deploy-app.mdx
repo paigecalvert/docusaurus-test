@@ -1,0 +1,49 @@
+# Step 7: Configure the Application
+
+After you run the installation script and deploy the application, you can access the Replicated admin console.
+
+This procedure shows you how to make a configuration change for the application, which is a typical task performed by customers.
+
+To configure the application:
+
+1. Access the admin console using `https://localhost:8800` if the installation script is still running. Otherwise, run the following command to access the admin console:
+
+  ```bash
+  kubectl kots admin-console --namespace NAMESPACE
+  ```
+
+  Replace `NAMESPACE` with the namespace where the app manager is installed.
+
+1. Enter the password that you created in [Step 6: Install the App Manager](tutorial-cli-install-app-manager) to log in to the admin console.
+
+  The admin console dashboard opens. On the admin console **Dashboard** tab, users can take various actions, including viewing the application status, opening the application, checking for application updates, syncing their license, and setting up application monitoring on the cluster with Prometheus.
+
+    ![admin console app dashboard](/images/tutorials/tutorial-admin-console-dashboard.png)
+
+1. On the Config tab, select the **Customize Text Inputs** checkbox. In the **Text Example** field, enter any text. For example, `Hello`.
+
+    ![admin console configuration tab](/images/tutorials/tutorial-install-config-tab.png)
+
+   This page displays configuration settings that are specific to the application. Software vendors define the fields that are displayed on this page in the Replicated Config custom resource. For more information, see [Config](/reference/custom-resource-config) in _Reference_.
+
+1. Click **Save config**. In the dialog that opens, click **Go to updated version**.
+
+    The Version history tab opens.
+
+1. Click **Deploy** for the new version. Then click **Yes, deploy** in the confirmation dialog.
+
+    ![admin console configuration tab](/images/tutorials/tutorial-install-version-history.png)
+
+1. Click **Open App** to view the application in your browser.
+
+   ![web page that displays text](/images/tutorials/tutorial-open-app.png)
+
+   Notice the text that you entered previously on the configuration page is displayed on the screen.
+
+   :::note
+   If you do not see the new text, refresh your browser.
+   :::
+
+## Next Step
+
+Continue to [Step 8: Create a New Version](tutorial-cli-create-new-version) to make a change to one of the manifest files for the `cli-tutorial` application, then use the replicated CLI to create and promote a new release.

@@ -1,47 +1,28 @@
 ---
-sidebar_position: 1
+slug: /
 ---
+import LabsIntro from "./partials/getting-started/_labs-intro.mdx"
 
-# Tutorial Intro
+# Welcome
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome! This topic describes how to get started with Replicated as a software vendor. It also includes information on how to navigate the Replicated product documentation site.
 
-## Getting Started
+## Get Started with Replicated
 
-Get started by **creating a new site**.
+The documentation includes UI-based and CLI-based tutorials that are designed to help software vendors learn about Replicated by completing common tasks with a sample application.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+To get started with a tutorial that demonstrates how to use the Replicated vendor portal to create and promote releases, see [Introduction and Setup](/vendor/tutorial-ui-setup) in _UI Tutorial_.
 
-### What you'll need
+To get started with a tutorial that demonstrates how to use the replicated CLI to create and promote releases, see [Introduction and Setup](/vendor/tutorial-ui-setup) in _CLI Tutorial_.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## About the Replicated Documentation
 
-## Generate a new site
+The Replicated product documentation guides vendors through packaging, distributing, and updating their application with Replicated. To begin packaging your production application with Replicated, see [How to Package and Distribute a Production Application](vendor/distributing-workflow).
 
-Generate a new Docusaurus site using the **classic template**.
+The Reference section includes reference documentation for Replicated custom resources, template functions, CLIs, and the Vendor API.
 
-The classic template will automatically be added to your project after you run the command:
+The Enterprise section includes information for the enterprise users of applications delivered with Replicated. The topics in this section describe how enterprise users can install, update, manage, backup and restore, and monitor the application.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Vendors can use the Enterprise documentation to test the installation and management their application with Replicated. Vendors can also clone the Enterprise content from the replicated-docs repository and include it with their application documentation. For more information, see [replicated-docs](https://github.com/replicatedhq/replicated-docs) in GitHub.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

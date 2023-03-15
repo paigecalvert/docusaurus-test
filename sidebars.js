@@ -19,28 +19,111 @@ const sidebars = {
   // But you can create a sidebar manually
   
   vendor: [
+    'intro',
+    'intro-replicated',
     {
       type: 'category',
-      label: 'Vendor',
-      // dirName: 'tutorial-basics',
+      label: 'Getting Started Tutorials',
       items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/deploy-your-site',
-        'tutorial-basics/create-a-blog-post',
+        {
+          type: 'category',
+          label: 'UI Tutorial',
+          items: [
+            'vendor/tutorial-ui-setup',
+            'vendor/tutorial-ui-create-app',
+            'vendor/tutorial-ui-create-release',
+            'vendor/tutorial-ui-create-customer',
+            'vendor/tutorial-ui-install-app-manager',
+            'vendor/tutorial-ui-deploy-app',
+            'vendor/tutorial-ui-create-new-version',
+            'vendor/tutorial-ui-update-app',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'CLI Tutorial',
+          items: [
+            'vendor/tutorial-cli-setup',
+            'vendor/tutorial-cli-install-cli',
+            'vendor/tutorial-cli-create-app',
+            'vendor/tutorial-cli-manifests',
+            'vendor/tutorial-cli-create-release',
+            'vendor/tutorial-cli-create-customer',
+            'vendor/tutorial-cli-install-app-manager',
+            'vendor/tutorial-cli-deploy-app',
+            'vendor/tutorial-cli-create-new-version',
+            'vendor/tutorial-cli-update-app',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Vendor Portal Team Management',
+      items: [
+        'vendor/vendor-portal-creating-account',
+        'vendor/team-management',
+        'vendor/team-management-github-username',
+        {
+            type: 'category',
+            label: 'Configuring Role-based Access Control',
+            items: [
+              'vendor/team-management-rbac-configuring',
+              "vendor/team-management-rbac-about",
+              'vendor/team-management-rbac-resource-names',
+          ],
+        },
+        'vendor/team-management-google-auth',
+        'vendor/team-management-saml-auth',
+        'vendor/custom-domains',
       ],
     },
   ],
   enterprise: [
     {
       type: 'category',
-      label: 'Enterprise',
-      // dirName: 'tutorial-extra',
+      label: 'Installing an Application',
       items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
+        'enterprise/installing-overview',
+        'enterprise/installing-general-requirements',
+        'enterprise/image-registry-airgap',
+        'enterprise/installing-stateful-component-requirements',
+        'enterprise/sbom-validating',
+        'enterprise/installing-existing-cluster',
+        'enterprise/installing-embedded-cluster',
+        'enterprise/cluster-management-add-nodes',
+        'enterprise/installing-app-setup',
+        'enterprise/installing-existing-cluster-automation',
+        'enterprise/delete-admin-console',
       ],
     },
-  ], 
+    {
+      type: 'category',
+      label: 'Private Registries',
+      items: [
+        'enterprise/image-registry-settings',
+        'enterprise/image-registry-embedded-cluster',
+        'enterprise/image-registry-rate-limits',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Updating',
+      items: [
+        'enterprise/updating-apps',
+        'enterprise/updating-app-manager',
+        'enterprise/updating-embedded-cluster',
+        'enterprise/updating-patching-with-kustomize',
+        'enterprise/updating-licenses',
+        'enterprise/updating-tls-cert',
+      ],
+    },
+  ],
+  releaseNotes: [
+    'release-notes/rn-whats-new',
+    'release-notes/rn-app-manager',
+    'release-notes/rn-kubernetes-installer',
+  ],
 };
 
 module.exports = sidebars;

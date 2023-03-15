@@ -6,9 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Replicated Docs',
+  favicon: 'images/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -64,23 +63,29 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Replicated Documentation',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'images/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
             position: 'left',
+            sidebarId: 'releaseNotes',
+            label: 'Release Notes',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
             sidebarId: 'vendor',
-            label: 'Vendor',
+            label: 'Vendors',
           },
           {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'enterprise',
-            label: 'Enterprise',
+            label: 'Enterprise Users',
           },
         ],
       },
