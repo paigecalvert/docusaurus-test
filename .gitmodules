@@ -1,0 +1,3 @@
+[submodule "enterprise-submodule"]
+	path = docs-submodule-test
+	url = https://github.com/paigecalvert/docs-submodule-test.git
